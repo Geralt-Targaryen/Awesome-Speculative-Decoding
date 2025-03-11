@@ -11,6 +11,7 @@ Reading list on speculative decoding.
 - [Verification Strategies](#verification-strategies)
 - [Draft Length Control](#draft-length-control)
 - [Citation](#citation)
+- [Other Awesome Lists](#other-awesome-lists)
 
 ## History & Origin
 
@@ -46,6 +47,29 @@ Reading list on speculative decoding.
   >
   > Experiments on: Vicuna-7B, Flan-T5-3B | Spider, GSM8K, CodeSearchNet-Python, Alpaca-finance
 
+- "PaSS: Parallel Speculative Sampling" [2023-11] [[paper](https://arxiv.org/abs/2311.13581)]
+
+  > Learn special tokens ($L$ lookahead embeddings $[LA]_1, \cdots, [LA]_L$) on a small training set
+  >
+  > Experiments on: LLaMA-7B | Wikipedia, Stack
+
+- "Cascade Speculative Drafting for Even Faster LLM Inference" [2023-12] [NeurIPS 2024] [[paper](https://arxiv.org/abs/2312.11462)]
+
+  > - Vertical cascade: in a series of draft models, each model reviews drafts from a smaller one, with the smallest model being a statistical model
+  > - Horizontal cascade: assigns the largest draft model to generate the first draft token, and uses progressively smaller draft models to generate the following tokens (which are less likely to be accepted)
+  >
+  > Experiemnts on: Flan-T5, LLaMA-2-Chat-7B | GSM8K, MMLU
+
+- "Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads" [2024-01] [ICML 2024] [[paper](https://arxiv.org/abs/2401.10774)]
+
+  > Train one head (a two-layer FFN with residual connection) for each draft token position
+  >
+  > Experiemnts on: Vicuna-7B/13B/33B, Zephyr-7B | MT-Bench
+
+    <p align="center">
+    <img src="imgs/2401.10774-1.png" width="300"></img>
+    </p>
+
 - "EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty" [2024-01] [ICML 2024] [[paper](https://arxiv.org/abs/2401.15077)]
 
   > The draft model autoregressively processes at the feature (hidden states before LM head) level and then derives tokens using the LM head of the target model
@@ -68,6 +92,22 @@ Reading list on speculative decoding.
 
 ## Retrieval-based Speculative Decoding
 
+- "SuffixDecoding: A Model-Free Approach to Speeding Up Large Language Model Inference" [2024-11] [[paper](https://arxiv.org/abs/2411.04975)]
+
+  > N-gram draft model that's built on-the-fly from a suffix tree
+  >
+  > Experiments on: LLaMA-3-70B-Instruct | WildChat, Magicoder, Spider, AgenticSQL
+
+    <p align="center">
+    <img src="imgs/2411.04975-1.png" width="600"></img>
+    </p>
+
+- "SAM Decoding: Speculative Decoding via Suffix Automaton" [2024-11] [[paper](https://arxiv.org/abs/2411.10666)]
+
+  > Another n-gram draft model that's built on-the-fly from a suffix tree
+  >
+  > Experiments on: Vicuna-7B-v1.3 | MT-Bench, WMT14 De-En, CNN/DM, Natural Question, GSM8K, DPR
+
 - "Speculative Decoding for Multi-Sample Inference" [2025-03] [[paper](https://arxiv.org/abs/2503.05330)]
 
   > SD method tailored for multi-sample reasoning scenarios, such as self-consistency and Best-of-N sampling.
@@ -86,6 +126,17 @@ Reading list on speculative decoding.
 
     <p align="center">
     <img src="imgs/2402.02082-2.png" width="300"></img>
+    </p>
+
+- "EAGLE-2: Faster Inference of Language Models with Dynamic Draft Trees" [2024-06] [EMNLP 2024] [[paper](https://arxiv.org/abs/2406.16858)]
+
+  > In the draft tree, some shallow nodes that are not expanded may have higher values than the deeper expanded nodes. Thus, EAGLE-2 reranks all draft tokens and select the top $m$ tokens with the highest values.
+  >
+  > Experiments on: Vicuna-7B/13B, LLaMA2-Chat-7B/13B/70B, LLaMA3-Instruct-8B/70B | MT-Bench, HumanEval, GSM8K, CNN/DM, Natural Questions
+
+    <p align="center">
+    <img src="imgs/2406.16858-2.png" width="290"></img>
+    <img src="imgs/2406.16858-1.png" width="290"></img>
     </p>
 
 ## Verification Strategies
@@ -165,3 +216,7 @@ If you refer to this repo, please cite the following paper:
       url={https://arxiv.org/abs/2411.18462},
 }
 ```
+
+## Other Awesome Lists
+
+[**Awesome-Code-LLM**](https://github.com/codefuse-ai/Awesome-Code-LLM), [**Awesome-Education-LLM**](https://github.com/Geralt-Targaryen/Awesome-Education-LLM)
