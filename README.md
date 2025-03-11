@@ -24,6 +24,28 @@ Reading list on speculative decoding.
 
 ## Draft Models
 
+- "Accelerating Transformer Inference for Translation via Parallel Decoding" [2023-05] [ACL 2023] [[paper](https://arxiv.org/abs/2305.10427)]
+
+  > A block of [PAD] tokens are iteratively refined until no token changes in the block. Applies off-the-shelf to any autoregressive model.
+  >
+  > Experiments on: machine translation
+
+    <p align="center">
+    <img src="imgs/2305.10427-1.png" width="600"></img>
+    </p>
+
+- "Draft & Verify: Lossless Large Language Model Acceleration via Self-Speculative Decoding" [2023-09] [ACL 2024] [[paper](https://arxiv.org/abs/2309.08168)]
+
+  > The target LLM selectively skips some of its intermediate layers to generate draft tokens
+  >
+  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-13B-Chat, CodeLLaMA-13B | CNN/DM, XSum, HumanEval
+
+- "Online Speculative Decoding" [2023-11] [ICML 2024] [[paper](https://arxiv.org/abs/2310.07177)]
+
+  > Continuously update the draft model on observed user query data
+  >
+  > Experiments on: Vicuna-7B, Flan-T5-3B | Spider, GSM8K, CodeSearchNet-Python, Alpaca-finance
+
 - "EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty" [2024-01] [ICML 2024] [[paper](https://arxiv.org/abs/2401.15077)]
 
   > The draft model autoregressively processes at the feature (hidden states before LM head) level and then derives tokens using the LM head of the target model
@@ -67,6 +89,12 @@ Reading list on speculative decoding.
     </p>
 
 ## Verification Strategies
+
+- "SpecTr: Fast Speculative Decoding via Optimal Transport" [2023-10] [NeurIPS 2023] [[paper](https://arxiv.org/abs/2310.15141)]
+
+  > Introduced OTM - Optimal Transport with Membership cost - and an approximation that's linear in vocabulary size and logarithmic in candidate set size to tackle draft selection when there are multiple drafts
+  >
+  > Experiments on: PALM-2-Bison | LM1B
 
 - "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.15197)]
 
