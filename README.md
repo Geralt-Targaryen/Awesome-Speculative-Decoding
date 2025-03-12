@@ -10,6 +10,7 @@ Reading list on speculative decoding.
 - [Draft Tree Construction](#draft-tree-construction)
 - [Verification Strategies](#verification-strategies)
 - [Draft Length Control](#draft-length-control)
+- [Speculative Decoding + Other Technologies](#speculative-decoding--other-technologies)
 - [Citation](#citation)
 - [Other Awesome Lists](#other-awesome-lists)
 
@@ -90,7 +91,43 @@ Reading list on speculative decoding.
     <img src="imgs/2402.02082-1.png" width="600"></img>
     </p>
 
+- "Hydra: Sequentially-Dependent Draft Heads for Medusa Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.05109)]
+
+  > A variant of Medusa where each draft head takes output from the previous head as input
+  >
+  > Experiments on: Vicuna-7B/13B/33B | MT-Bench
+
+    <p align="center">
+    <img src="imgs/2402.05109-1.png" width="600"></img>
+    </p>
+
+- "Speculative Decoding via Early-exiting for Faster LLM Inference with Thompson Sampling Control Mechanism" [2024-06] [ACL 2024 Findings] [[paper](https://arxiv.org/abs/2406.03853)]
+
+  > Introduces a trainable early-exiting layer on top of the target model's N-th layer hidden states to generate draft tokens
+  >
+  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-Chat-70B, Vicuna-13B, CodeLLaMA-13B | GSM8K, XSum, HumanEval, MT-Bench
+
+    <p align="center">
+    <img src="imgs/2406.03853-1.png" width="600"></img>
+    </p>
+
+- "Training Domain Draft Models for Speculative Decoding: Best Practices and Insights" [2025-03] [[paper](https://arxiv.org/abs/2503.07807)]
+
+  > domain-specific draft models (function calling, biolog, Chinese)
+  >
+  > Experiments on: LLaMA-3.1-8B
+
 ## Retrieval-based Speculative Decoding
+
+- "Ouroboros: Generating Longer Drafts Phrase by Phrase for Faster Speculative Decoding" [2024-02] [EMNLP 2024] [[paper](https://arxiv.org/abs/2402.13720)]
+
+  > Extends the last draft token to phrases. Does not require additional training.
+  >
+  > Experiments on: Yi-Base-34B, DeepSeek-Coder-Instruct-33B, CodeLLaMA-Instruct-34B, LLaMA-2-Chat-70B | HumanEval, MBPP, GSM8K, CNN/DM, WMT16
+
+    <p align="center">
+    <img src="imgs/2402.13720-1.png" width="600"></img>
+    </p>
 
 - "SuffixDecoding: A Model-Free Approach to Speeding Up Large Language Model Inference" [2024-11] [[paper](https://arxiv.org/abs/2411.04975)]
 
@@ -200,6 +237,22 @@ Reading list on speculative decoding.
   > 3. SLO-aware Efficiency estimator: evaluates the efficiency of speculative decoding and achieves SLO (service level objective) awareness
   >
   > Experiments on: Vicuna-7B-v1.5, Vicuna-33B-v1.3, LLaMA-3.1-70B | MT-Bench, WMT14 De-En, CNN/DM, Natural Questions, GSM8K, DPR
+
+## Speculative Decoding + Other Technologies
+
+- "Speculative Contrastive Decoding" [2023-11] [ACL 2024 Short] [[paper](https://arxiv.org/abs/2311.08981)]
+
+  > Speculative decoding + contrastive decoding to achieve both decoding acceleration and quality improvement
+  >
+  > Experiments on: LLaMA-2-70B | WikiText, HumanEval, AlpacaEval, GSM8K
+
+- "LayerSkip: Enabling Early Exit Inference and Self-Speculative Decoding" [2024-04] [ACL 2024] [[paper](https://arxiv.org/abs/2404.16710)]
+
+  > - Apply layer dropout (higher dropout rates for later layers) and early exit loss during training
+  > - At inference time, exit at early layers to generate draft tokens, and verify the draft tokens with the ramaining layers.
+  > - Note: _this changes target model!_
+  >
+  > Experiments on: LLaMA-2-7B/13B, LLaMA-3-8B, LLaMA-3.2-1B
 
 ## Citation
 
