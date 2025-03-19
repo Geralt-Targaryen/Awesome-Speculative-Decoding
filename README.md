@@ -113,9 +113,29 @@ Reading list on speculative decoding.
 
 - "Training Domain Draft Models for Speculative Decoding: Best Practices and Insights" [2025-03] [[paper](https://arxiv.org/abs/2503.07807)]
 
-  > domain-specific draft models (function calling, biolog, Chinese)
+  > domain-specific draft models (function calling, biology, Chinese)
   >
   > Experiments on: LLaMA-3.1-8B
+
+- "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding" [2025-03] [[paper](https://arxiv.org/abs/2503.10135)]
+
+  > EAGLE for the first two draft tokens, Medusa for the next 5.
+  >
+  > Experiments on: Vicuna7B/13B, LLaMA-2-Chat-7B/13B/70B, LLaMA-3-Instruct-8B/70B | MT-Bench, HumanEval, GSM8K, Alpaca, CNN/DM, Natural Questions.
+
+    <p align="center">
+    <img src="imgs/2503.10135-1.png" width="600"></img>
+    </p>
+
+- "ML-SpecQD: Multi-Level Speculative Decoding with Quantized Drafts" [2025-03] [[paper](https://arxiv.org/abs/2503.13565)]
+
+  > 4-bit quantization in MXFP4 datatype as draft model
+  >
+  > Experiments on: LLaMA2 7B, Qwen2.5-Coder 7B | HAGRID, MBPP
+
+    <p align="center">
+    <img src="imgs/2503.13565-1.png" width="300"></img>
+    </p>
 
 ## Retrieval-based Speculative Decoding
 
