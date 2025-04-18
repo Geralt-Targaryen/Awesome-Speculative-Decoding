@@ -6,6 +6,10 @@ Reading list on speculative decoding.
 
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
+  - [Lookahead Padding](#lookahead-padding)
+  - [Layer Skipping & Early Exiting](#layer-skipping--early-exiting)
+  - [Draft Model Based on Target Hidden States](#draft-model-based-on-target-hidden-states)
+  - [Others](#others)
 - [Retrieval-based Speculative Decoding](#retrieval-based-speculative-decoding)
 - [Draft Tree Construction](#draft-tree-construction)
 - [Verification Strategies](#verification-strategies)
@@ -26,6 +30,8 @@ Reading list on speculative decoding.
 
 ## Draft Models
 
+### Lookahead Padding
+
 - "Accelerating Transformer Inference for Translation via Parallel Decoding" [2023-05] [ACL 2023] [[paper](https://arxiv.org/abs/2305.10427)]
 
   > A block of [PAD] tokens are iteratively refined until no token changes in the block. Applies off-the-shelf to any autoregressive model.
@@ -36,30 +42,31 @@ Reading list on speculative decoding.
     <img src="imgs/2305.10427-1.png" width="600"></img>
     </p>
 
-- "Draft & Verify: Lossless Large Language Model Acceleration via Self-Speculative Decoding" [2023-09] [ACL 2024] [[paper](https://arxiv.org/abs/2309.08168)]
-
-  > The target LLM selectively skips some of its intermediate layers to generate draft tokens
-  >
-  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-13B-Chat, CodeLLaMA-13B | CNN/DM, XSum, HumanEval
-
-- "Online Speculative Decoding" [2023-11] [ICML 2024] [[paper](https://arxiv.org/abs/2310.07177)]
-
-  > Continuously update the draft model on observed user query data
-  >
-  > Experiments on: Vicuna-7B, Flan-T5-3B | Spider, GSM8K, CodeSearchNet-Python, Alpaca-finance
-
 - "PaSS: Parallel Speculative Sampling" [2023-11] [[paper](https://arxiv.org/abs/2311.13581)]
 
   > Learn special tokens ($L$ lookahead embeddings $[LA]_1, \cdots, [LA]_L$) on a small training set
   >
   > Experiments on: LLaMA-7B | Wikipedia, Stack
 
-- "Cascade Speculative Drafting for Even Faster LLM Inference" [2023-12] [NeurIPS 2024] [[paper](https://arxiv.org/abs/2312.11462)]
+### Layer Skipping & Early Exiting
 
-  > - Vertical cascade: in a series of draft models, each model reviews drafts from a smaller one, with the smallest model being a statistical model
-  > - Horizontal cascade: assigns the largest draft model to generate the first draft token, and uses progressively smaller draft models to generate the following tokens (which are less likely to be accepted)
+- "Draft & Verify: Lossless Large Language Model Acceleration via Self-Speculative Decoding" [2023-09] [ACL 2024] [[paper](https://arxiv.org/abs/2309.08168)]
+
+  > The target LLM selectively skips some of its intermediate layers to generate draft tokens
   >
-  > Experiemnts on: Flan-T5, LLaMA-2-Chat-7B | GSM8K, MMLU
+  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-13B-Chat, CodeLLaMA-13B | CNN/DM, XSum, HumanEval
+
+- "Speculative Decoding via Early-exiting for Faster LLM Inference with Thompson Sampling Control Mechanism" [2024-06] [ACL 2024 Findings] [[paper](https://arxiv.org/abs/2406.03853)]
+
+  > Introduces a trainable early-exiting layer on top of the target model's N-th layer hidden states to generate draft tokens
+  >
+  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-Chat-70B, Vicuna-13B, CodeLLaMA-13B | GSM8K, XSum, HumanEval, MT-Bench
+
+    <p align="center">
+    <img src="imgs/2406.03853-1.png" width="600"></img>
+    </p>
+
+### Draft Model Based on Target Hidden States
 
 - "Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads" [2024-01] [ICML 2024] [[paper](https://arxiv.org/abs/2401.10774)]
 
@@ -101,22 +108,6 @@ Reading list on speculative decoding.
     <img src="imgs/2402.05109-1.png" width="600"></img>
     </p>
 
-- "Speculative Decoding via Early-exiting for Faster LLM Inference with Thompson Sampling Control Mechanism" [2024-06] [ACL 2024 Findings] [[paper](https://arxiv.org/abs/2406.03853)]
-
-  > Introduces a trainable early-exiting layer on top of the target model's N-th layer hidden states to generate draft tokens
-  >
-  > Experiments on: LLaMA-2-13B/70B, LLaMA-2-Chat-70B, Vicuna-13B, CodeLLaMA-13B | GSM8K, XSum, HumanEval, MT-Bench
-
-    <p align="center">
-    <img src="imgs/2406.03853-1.png" width="600"></img>
-    </p>
-
-- "Training Domain Draft Models for Speculative Decoding: Best Practices and Insights" [2025-03] [[paper](https://arxiv.org/abs/2503.07807)]
-
-  > domain-specific draft models (function calling, biology, Chinese)
-  >
-  > Experiments on: LLaMA-3.1-8B
-
 - "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding" [2025-03] [[paper](https://arxiv.org/abs/2503.10135)]
 
   > EAGLE for the first two draft tokens, Medusa for the next 5.
@@ -127,6 +118,27 @@ Reading list on speculative decoding.
     <img src="imgs/2503.10135-1.png" width="600"></img>
     </p>
 
+### Others
+
+- "Online Speculative Decoding" [2023-11] [ICML 2024] [[paper](https://arxiv.org/abs/2310.07177)]
+
+  > Continuously update the draft model on observed user query data
+  >
+  > Experiments on: Vicuna-7B, Flan-T5-3B | Spider, GSM8K, CodeSearchNet-Python, Alpaca-finance
+
+- "Cascade Speculative Drafting for Even Faster LLM Inference" [2023-12] [NeurIPS 2024] [[paper](https://arxiv.org/abs/2312.11462)]
+
+  > - Vertical cascade: in a series of draft models, each model reviews drafts from a smaller one, with the smallest model being a statistical model
+  > - Horizontal cascade: assigns the largest draft model to generate the first draft token, and uses progressively smaller draft models to generate the following tokens (which are less likely to be accepted)
+  >
+  > Experiemnts on: Flan-T5, LLaMA-2-Chat-7B | GSM8K, MMLU
+
+- "Training Domain Draft Models for Speculative Decoding: Best Practices and Insights" [2025-03] [[paper](https://arxiv.org/abs/2503.07807)]
+
+  > domain-specific draft models (function calling, biology, Chinese)
+  >
+  > Experiments on: LLaMA-3.1-8B
+
 - "ML-SpecQD: Multi-Level Speculative Decoding with Quantized Drafts" [2025-03] [[paper](https://arxiv.org/abs/2503.13565)]
 
   > 4-bit quantization in MXFP4 datatype as draft model
@@ -135,16 +147,6 @@ Reading list on speculative decoding.
 
     <p align="center">
     <img src="imgs/2503.13565-1.png" width="300"></img>
-    </p>
-
-- "DEL: Context-Aware Dynamic Exit Layer for Efficient Self-Speculative Decoding" [2025-04] [[paper](https://arxiv.org/abs/2504.05598)]
-
-  > DEL, a plug-and-play method that adaptively selects the exit layer and speculation length during inference.
-  >
-  > Experiments on: LLaMA-2 7B/13B/70B, LLaMA-3.2 1B, CodeLLaMA 7B/34B | AQuA-RAT, CNN/DM, XSUM, HumanEval
-
-    <p align="center">
-    <img src="imgs/2504.05598-1.png" width="600"></img>
     </p>
 
 ## Retrieval-based Speculative Decoding
@@ -283,6 +285,16 @@ Reading list on speculative decoding.
   > - Note: _this changes target model!_
   >
   > Experiments on: LLaMA-2-7B/13B, LLaMA-3-8B, LLaMA-3.2-1B
+
+- "DEL: Context-Aware Dynamic Exit Layer for Efficient Self-Speculative Decoding" [2025-04] [[paper](https://arxiv.org/abs/2504.05598)]
+
+  > DEL, a plug-and-play method that adaptively selects the exit layer and speculation length during inference on top of LayerSkip (2404.16710).
+  >
+  > Experiments on: LLaMA-2 7B/13B/70B, LLaMA-3.2 1B, CodeLLaMA 7B/34B | AQuA-RAT, CNN/DM, XSUM, HumanEval
+
+    <p align="center">
+    <img src="imgs/2504.05598-1.png" width="600"></img>
+    </p>
 
 ## Citation
 
