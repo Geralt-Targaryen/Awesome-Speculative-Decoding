@@ -137,6 +137,16 @@ Reading list on speculative decoding.
     <img src="imgs/2503.13565-1.png" width="300"></img>
     </p>
 
+- "DEL: Context-Aware Dynamic Exit Layer for Efficient Self-Speculative Decoding" [2025-04] [[paper](https://arxiv.org/abs/2504.05598)]
+
+  > DEL, a plug-and-play method that adaptively selects the exit layer and speculation length during inference.
+  >
+  > Experiments on: LLaMA-2 7B/13B/70B, LLaMA-3.2 1B, CodeLLaMA 7B/34B | AQuA-RAT, CNN/DM, XSUM, HumanEval
+
+    <p align="center">
+    <img src="imgs/2504.05598-1.png" width="600"></img>
+    </p>
+
 ## Retrieval-based Speculative Decoding
 
 - "Ouroboros: Generating Longer Drafts Phrase by Phrase for Faster Speculative Decoding" [2024-02] [EMNLP 2024] [[paper](https://arxiv.org/abs/2402.13720)]
