@@ -149,6 +149,12 @@ Reading list on speculative decoding.
     <img src="imgs/2503.13565-1.png" width="300"></img>
     </p>
 
+- "Automatic Task Detection and Heterogeneous LLM Speculative Decoding" [2025-05] [[paper](https://arxiv.org/abs/2505.08600)]
+
+  > Automatically categorizes downstream tasks into different sub-tasks and assigns them to a set of heterogeneous (LoRA-trained) draft models
+  >
+  > Experiments on: LLaMA2 13B | Wanjuan 1.0, ChemData700K
+
 ## Retrieval-based Speculative Decoding
 
 - "Ouroboros: Generating Longer Drafts Phrase by Phrase for Faster Speculative Decoding" [2024-02] [EMNLP 2024] [[paper](https://arxiv.org/abs/2402.13720)]
