@@ -214,6 +214,16 @@ Reading list on speculative decoding.
     <img src="imgs/2406.16858-1.png" width="290"></img>
     </p>
 
+- "HeteroSpec: Leveraging Contextual Heterogeneity for Efficient Speculative Decoding" [2025-05] [[paper](https://arxiv.org/abs/2505.13254)]
+
+  > HeteroSpec dynamically optimizes computational resource allocation based on linguistic context complexity
+  >
+  > - The depth of low-entropy draft paths is increased
+  > - More branches are pruned in low-entropy draft paths to focus on high-likelihood branches.
+  > - Just-in-time graph tracing and compilation are employed to optimize computation graphs.
+  >
+  > Experiments on: Vicuna 13B, LLaMA-3.1-Instruct 8B, LLaMA-3.3-Instruct 70B, R1 8B | MT-Bench, HumanEval, GSM8K, Alpaca, CNN/DM.
+
 ## Verification Strategies
 
 - "SpecTr: Fast Speculative Decoding via Optimal Transport" [2023-10] [NeurIPS 2023] [[paper](https://arxiv.org/abs/2310.15141)]
