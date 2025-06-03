@@ -155,6 +155,10 @@ Reading list on speculative decoding.
   >
   > Experiments on: LLaMA2 13B | Wanjuan 1.0, ChemData700K
 
+- "Mamba Drafters for Speculative Decoding" [2025-06] [[paper](https://arxiv.org/abs/2506.01206)]
+
+  > Experiments on: Pythia 6.9B, Mistral 7B | XSum, CNN/DM, GSM8K, MT-Bench, Alpaca, HumanEval, LongBench
+
 ## Retrieval-based Speculative Decoding
 
 - "Ouroboros: Generating Longer Drafts Phrase by Phrase for Faster Speculative Decoding" [2024-02] [EMNLP 2024] [[paper](https://arxiv.org/abs/2402.13720)]
