@@ -290,6 +290,12 @@ Reading list on speculative decoding.
   >
   > Experiments on: Vicuna-7B-v1.5, Vicuna-33B-v1.3, LLaMA-3.1-70B | MT-Bench, WMT14 De-En, CNN/DM, Natural Questions, GSM8K, DPR
 
+- "Utility-Driven Speculative Decoding for Mixture-of-Experts" [2025-06] [[paper](https://arxiv.org/abs/2506.20675)]
+
+  > Speculative decoding for MoEs. (MoEs break the key assumption in SD that the verification overhead compared to decoding a single token is negligible.)
+  >
+  > Experiments on: Mixtral, Phi-3.5, OLMoE, DeepSeek-V1, Qwen1.5 | GSM8K, HumanEval, MT-Bench
+
 ## Speculative Decoding + Other Technologies
 
 - "Speculative Contrastive Decoding" [2023-11] [ACL 2024 Short] [[paper](https://arxiv.org/abs/2311.08981)]
