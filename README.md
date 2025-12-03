@@ -6,6 +6,8 @@ Reading list on speculative decoding.
 
 - [Bibliography by Venues](#bibliography-by-venues)
   - [EMNLP 2025](#emnlp-2025)
+  - [ACL 2025](#acl-2025)
+  - [ICML 2025](#icml-2025)
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
   - [Lookahead Padding](#lookahead-padding)
@@ -61,6 +63,66 @@ Reading list on speculative decoding.
 - "FractalLLM: Lossless Self-Speculative Decoding with Layer Embedded Self-Compression" [2025-11] [[paper](https://aclanthology.org/2025.findings-emnlp.1286/)]
 
 - "SpecCoT: Accelerating Chain-of-Thought Reasoning through Speculative Exploration" [2025-11] [[paper](https://aclanthology.org/2025.findings-emnlp.1326/)]
+
+### ACL 2025
+
+**Main**
+
+- "SAM Decoding: Speculative Decoding via Suffix Automaton" [2024-11] [[paper](https://arxiv.org/abs/2411.10666)]
+
+- "FR-Spec: Accelerating Large-Vocabulary Language Models via Frequency-Ranked Speculative Sampling" [2025-02] [[paper](https://arxiv.org/abs/2502.14856)]
+
+- "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.15197)]
+
+- "CORAL: Learning Consistent Representations across Multi-step Training with Lighter Speculative Drafter" [2025-02] [[paper](https://arxiv.org/abs/2502.16880)]
+
+- "CLaSp: In-Context Layer Skip for Self-Speculative Decoding" [2025-05] [[paper](https://arxiv.org/abs/2505.24196)]
+
+- "A Drop-In Solution for On-the-Fly Adaptation of Speculative Decoding in Large Language Models" [2025-07] [[paper](https://aclanthology.org/2025.acl-long.482/)]
+
+- "Faster Speculative Decoding via Effective Draft Decoder with Pruned Candidate Tree" [2025-07] [[paper](https://aclanthology.org/2025.acl-long.486/)]
+
+- "SPECTRA: Faster Large Language Model Inference with Optimized Internal and External Speculation" [2025-07] [[paper](https://aclanthology.org/2025.acl-long.685/)]
+
+**Findings**
+
+- "DReSD: Dense Retrieval for Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.15572)]
+
+- "Fuzzy Speculative Decoding for a Tunable Accuracy-Runtime Tradeoff" [2025-02] [[paper](https://arxiv.org/abs/2502.20704)]
+
+- "RASD: Retrieval-Augmented Speculative Decoding" [2025-03] [[paper](https://arxiv.org/abs/2503.03434)]
+
+- "Speculative Sampling via Exponential Races" [2025-04] [[paper](https://arxiv.org/abs/2504.15475)]
+
+### ICML 2025
+
+- "Accelerated Diffusion Models via Speculative Sampling" [2025-01] [[paper](https://arxiv.org/abs/2501.05370)]
+
+- "Reward-Guided Speculative Decoding for Efficient LLM Reasoning" [2025-01] [[paper](https://arxiv.org/abs/2501.19324)]
+
+- "Fast Large Language Model Collaborative Decoding via Speculation" [2025-02] [[paper](https://arxiv.org/abs/2502.01662)]
+
+- "Speculative Prefill: Turbocharging TTFT with Lightweight and Training-Free Token Importance Estimation" [2025-02] [[paper](https://arxiv.org/abs/2502.02789)]
+
+- "Accelerating LLM Inference with Lossless Speculative Decoding Algorithms for Heterogeneous Vocabularies" [2025-02] [[paper](https://arxiv.org/abs/2502.05202)]
+
+- "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache" [2025-02] [[paper](https://arxiv.org/abs/2502.10424)]
+
+- "RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.20330)]
+
+- "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding" [2025-03] [[paper](https://arxiv.org/abs/2503.10135)]
+
+- "SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs" [2025-03] [[paper](https://arxiv.org/abs/2503.16163)]
+
+- "Accelerating Large Language Model Reasoning via Speculative Search" [2025-05] [[paper](https://arxiv.org/abs/2505.02865)]
+
+- "Diffusion Models are Secretly Exchangeable: Parallelizing DDPMs via Auto Speculation" [2025-05] [[paper](https://arxiv.org/abs/2505.03983)]
+
+- "BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms" [2025-05] [[paper](https://arxiv.org/abs/2505.15141)]
+
+- "Attention-Level Speculation" [2025-07] [[paper](https://proceedings.mlr.press/v267/cai25g.html)]
+
+- "polybasic Speculative Decoding Through a Theoretical Perspective" [2025-07] [[paper](https://arxiv.org/abs/2510.26527)]
 
 ## History & Origin
 
