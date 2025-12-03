@@ -4,6 +4,8 @@ Reading list on speculative decoding.
 
 **Table of Contents**
 
+- [Bibliography by Venues](#bibliography-by-venues)
+  - [EMNLP 2025](#emnlp-2025)
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
   - [Lookahead Padding](#lookahead-padding)
@@ -17,6 +19,48 @@ Reading list on speculative decoding.
 - [Speculative Decoding + Other Technologies](#speculative-decoding--other-technologies)
 - [Citation](#citation)
 - [Other Awesome Lists](#other-awesome-lists)
+
+## Bibliography by Venues
+
+### EMNLP 2025
+
+**Main**
+
+- "QSpec: Speculative Decoding with Complementary Quantization Schemes" [2024-10] [[paper](https://arxiv.org/abs/2410.11305)]
+
+- "Draft Model Knows When to Stop: Self-Verification Speculative Decoding for Long-Form Generation" [2024-11] [[paper](https://arxiv.org/abs/2411.18462)]
+
+- "Dovetail: A CPU/GPU Heterogeneous Speculative Decoding for LLM inference" [2024-12] [[paper](https://arxiv.org/abs/2412.18934)]
+
+- "Alignment-Augmented Speculative Decoding with Alignment Sampling and Conditional Verification" [2025-05] [[paper](https://arxiv.org/abs/2505.13204)]
+
+- "Accelerated Test-Time Scaling with Model-Free Speculative Sampling" [2025-06] [[paper](https://arxiv.org/abs/2506.04708)]
+
+- "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance" [2025-07] [[paper](https://arxiv.org/abs/2507.22424)]
+
+- "Reward-Shifted Speculative Sampling Is An Efficient Test-Time Weak-to-Strong Aligner" [2025-08] [[paper](https://arxiv.org/abs/2508.15044)]
+
+- "SpecVLM: Enhancing Speculative Decoding of Video LLMs via Verifier-Guided Token Pruning" [2025-08] [[paper](https://arxiv.org/abs/2508.16201)]
+
+- "Speculative Safety-Aware Decoding" [2025-08] [[paper](https://arxiv.org/abs/2508.17739)]
+
+- "Faster In-Context Learning for LLMs via N-Gram Trie Speculative Decoding" [2025-11] [[paper](https://aclanthology.org/2025.emnlp-main.911/)]
+
+- "Speculative Streaming: Efficient and Scalable Speculative Decoding with Multi-Stream Attention" [2025-11] [[paper](https://aclanthology.org/2025.emnlp-main.986/)]
+
+- "Cacheback: Speculative Decoding With Nothing But Cache" [2025-11] [[paper](https://www.arxiv.org/abs/2511.21699)]
+
+**Findings**
+
+- "Speculative Decoding for Multi-Sample Inference" [2025-03] [[paper](https://arxiv.org/abs/2503.05330)]
+
+- "MASSV: Multimodal Adaptation and Self-Data Distillation for Speculative Decoding of Vision-Language Models" [2025-05] [[paper](https://arxiv.org/abs/2505.10526)]
+
+- "Mamba Drafters for Speculative Decoding" [2025-06] [[paper](https://arxiv.org/abs/2506.01206)]
+
+- "FractalLLM: Lossless Self-Speculative Decoding with Layer Embedded Self-Compression" [2025-11] [[paper](https://aclanthology.org/2025.findings-emnlp.1286/)]
+
+- "SpecCoT: Accelerating Chain-of-Thought Reasoning through Speculative Exploration" [2025-11] [[paper](https://aclanthology.org/2025.findings-emnlp.1326/)]
 
 ## History & Origin
 
