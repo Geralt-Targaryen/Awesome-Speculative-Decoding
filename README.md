@@ -10,6 +10,8 @@ Reading list on speculative decoding.
   - [ICML 2025](#icml-2025)
   - [ICLR 2025](#iclr-2025)
   - [NAACL 2025](#naacl-2025)
+  - [NeurIPS 2024](#neurips-2024)
+  - [EMNLP 2024](#emnlp-2024)
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
   - [Lookahead Padding](#lookahead-padding)
@@ -69,6 +71,8 @@ Reading list on speculative decoding.
 ### ACL 2025
 
 **Main**
+
+- "Turning Trash into Treasure: Accelerating Inference of Large Language Models with Token Recycling" [2024-08] [[paper](https://arxiv.org/abs/2408.08696)]
 
 - "SAM Decoding: Speculative Decoding via Suffix Automaton" [2024-11] [[paper](https://arxiv.org/abs/2411.10666)]
 
@@ -173,6 +177,44 @@ Reading list on speculative decoding.
 - "Lossless Acceleration of Large Language Models with Hierarchical Drafting based on Temporal Locality in Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.05609)]
 
 - "Hierarchical Speculative Decoding with Dynamic Window" [2025-04] [[paper](https://aclanthology.org/2025.findings-naacl.462/)]
+
+### NeurIPS 2024
+
+- "Cascade Speculative Drafting for Even Faster LLM Inference" [2023-12] [[paper](https://arxiv.org/abs/2312.11462)]
+
+- "Sequoia: Scalable and Robust Speculative Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.12374)]
+
+- "Kangaroo: Lossless Self-Speculative Decoding for Accelerating LLMs via Double Early Exiting" [2024-04] [[paper](https://arxiv.org/abs/2404.18911)]
+
+- "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution" [2024-05] [[paper](https://arxiv.org/abs/2405.19325)]
+
+- "SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices" [2024-06] [[paper](https://arxiv.org/abs/2406.02532)]
+
+- "A Theoretical Perspective for Speculative Decoding Algorithm" [2024-10] [[paper](https://arxiv.org/abs/2411.00841)]
+
+- "Inevitable Trade-off between Watermark Strength and Speculative Sampling Efficiency for Language Models" [2024-10] [[paper](https://arxiv.org/abs/2410.20418)]
+
+- "Speculative Decoding with CTC-based Draft Model for LLM Inference Acceleration" [2024-12] [[paper](https://arxiv.org/abs/2412.00061)]
+
+### EMNLP 2024
+
+**Main**
+
+- "Ouroboros: Generating Longer Drafts Phrase by Phrase for Faster Speculative Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.13720)]
+
+- "Optimized Speculative Sampling for GPU Hardware Accelerators" [2024-06] [[paper](https://arxiv.org/abs/2406.11016)]
+
+- "Towards Fast Multilingual LLM Inference: Speculative Decoding and Specialized Drafters" [2024-06] [[paper](https://arxiv.org/abs/2406.16758)]
+
+- "EAGLE-2: Faster Inference of Language Models with Dynamic Draft Trees" [2024-06] [[paper](https://arxiv.org/abs/2406.16858)]
+
+- "SpecHub: Provable Acceleration to Multi-Draft Speculative Decoding" [2024-11] [[paper](https://arxiv.org/abs/2411.05289)]
+
+**Findings**
+
+- "Draft on the Fly: Adaptive Self-Speculative Decoding using Cosine Similarity" [2024-10] [[paper](https://arxiv.org/abs/2410.01028)]
+
+- "Temperature-Centric Investigation of Speculative Decoding with Knowledge Distillation" [2024-10] [[paper](https://arxiv.org/abs/2410.10141)]
 
 ## History & Origin
 
