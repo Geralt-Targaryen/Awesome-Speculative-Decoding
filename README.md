@@ -8,6 +8,8 @@ Reading list on speculative decoding.
   - [EMNLP 2025](#emnlp-2025)
   - [ACL 2025](#acl-2025)
   - [ICML 2025](#icml-2025)
+  - [ICLR 2025](#iclr-2025)
+  - [NAACL 2025](#naacl-2025)
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
   - [Lookahead Padding](#lookahead-padding)
@@ -123,6 +125,54 @@ Reading list on speculative decoding.
 - "Attention-Level Speculation" [2025-07] [[paper](https://proceedings.mlr.press/v267/cai25g.html)]
 
 - "polybasic Speculative Decoding Through a Theoretical Perspective" [2025-07] [[paper](https://arxiv.org/abs/2510.26527)]
+
+### ICLR 2025
+
+- "Block Verification Accelerates Speculative Decoding" [2024-03] [[paper](https://arxiv.org/abs/2403.10444)]
+
+- "Distributed Speculative Inference (DSI): Speculation Parallelism for Provably Faster Lossless Language Model Inference" [2024-05] [[paper](https://arxiv.org/abs/2405.14105)]
+
+- "Faster Cascades via Speculative Decoding" [2024-05] [[paper](https://arxiv.org/abs/2405.19261)]
+
+- "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting" [2024-07] [[paper](https://arxiv.org/abs/2407.08223)]
+
+- "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding" [2024-08] [[paper](https://arxiv.org/abs/2408.11049)]
+
+- "PEARL: Parallel Speculative Decoding with Adaptive Draft Length" [2024-08] [[paper](https://arxiv.org/abs/2408.11850)]
+
+- "Learning Harmonized Representations for Speculative Sampling" [2024-08] [[paper](https://arxiv.org/abs/2408.15766)]
+
+- "Accelerating Auto-regressive Text-to-Image Generation with Training-free Speculative Jacobi Decoding" [2024-10] [[paper](https://arxiv.org/abs/2410.01699)]
+
+- "LANTERN: Accelerating Visual Autoregressive Models with Relaxed Speculative Decoding" [2024-10] [[paper](https://arxiv.org/abs/2410.03355)]
+
+- "Mixture of Attentions For Speculative Decoding" [2024-10] [[paper](https://arxiv.org/abs/2410.03804)]
+
+- "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration" [2024-10] [[paper](https://arxiv.org/abs/2410.06916)]
+
+- "Multi-Draft Speculative Sampling: Canonical Decomposition and Theoretical Limits" [2024-10] [[paper](https://arxiv.org/abs/2410.18234)]
+
+- "Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment" [2025-01] [[paper](https://arxiv.org/abs/2501.19309)]
+
+- "Towards Optimal Multi-draft Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.18779)]
+
+### NAACL 2025
+
+**Main**
+
+- "Decoding Speculative Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.01528)]
+
+- "EMS-SD: Efficient Multi-sample Speculative Decoding for Accelerating Large Language Models" [2024-05] [[paper](https://arxiv.org/abs/2405.07542)]
+
+- "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion" [2024-08] [[paper](https://arxiv.org/abs/2408.05636)]
+
+- "Constrained Decoding with Speculative Lookaheads" [2024-12] [[paper](https://arxiv.org/abs/2412.10418)]
+
+**Findings**
+
+- "Lossless Acceleration of Large Language Models with Hierarchical Drafting based on Temporal Locality in Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.05609)]
+
+- "Hierarchical Speculative Decoding with Dynamic Window" [2025-04] [[paper](https://aclanthology.org/2025.findings-naacl.462/)]
 
 ## History & Origin
 
