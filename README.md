@@ -12,6 +12,10 @@ Reading list on speculative decoding.
   - [NAACL 2025](#naacl-2025)
   - [NeurIPS 2024](#neurips-2024)
   - [EMNLP 2024](#emnlp-2024)
+  - [ACL 2024](#acl-2024)
+  - [ICML 2024](#icml-2024)
+  - [ICLR 2024](#iclr-2024)
+  - [NAACL 2024](#naacl-2024)
 - [History & Origin](#history--origin)
 - [Draft Models](#draft-models)
   - [Lookahead Padding](#lookahead-padding)
@@ -215,6 +219,54 @@ Reading list on speculative decoding.
 - "Draft on the Fly: Adaptive Self-Speculative Decoding using Cosine Similarity" [2024-10] [[paper](https://arxiv.org/abs/2410.01028)]
 
 - "Temperature-Centric Investigation of Speculative Decoding with Knowledge Distillation" [2024-10] [[paper](https://arxiv.org/abs/2410.10141)]
+
+### ACL 2024
+
+**Main**
+
+- "Draft & Verify: Lossless Large Language Model Acceleration via Self-Speculative Decoding" [2023-09] [[paper](https://arxiv.org/abs/2309.08168)]
+
+- "Speculative Contrastive Decoding" [2023-11] [[paper](https://arxiv.org/abs/2311.08981)]
+
+- "LayerSkip: Enabling Early Exit Inference and Self-Speculative Decoding" [2024-04] [[paper](https://arxiv.org/abs/2404.16710)]
+
+**Findings**
+
+- "Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding" [2024-01] [[paper](https://arxiv.org/abs/2401.07851)]
+
+- "BASS: Batched Attention-optimized Speculative Sampling" [2024-04] [[paper](https://arxiv.org/abs/2404.15778)]
+
+- "Speculative Decoding via Early-exiting for Faster LLM Inference with Thompson Sampling Control Mechanism" [2024-06] [[paper](https://arxiv.org/abs/2406.03853)]
+
+- "Graph-Structured Speculative Decoding" [2024-07] [[paper](https://arxiv.org/abs/2407.16207)]
+
+### ICML 2024
+
+- "Online Speculative Decoding" [2023-10] [[paper](https://arxiv.org/abs/2310.07177)]
+
+- "Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads" [2024-01] [[paper](https://arxiv.org/abs/2401.10774)]
+
+- "EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty" [2024-01] [[paper](https://arxiv.org/abs/2401.15077)]
+
+- "Break the Sequential Dependency of LLM Inference Using Lookahead Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.02057)]
+
+- "GliDe with a CaPE: A Low-Hassle Method to Accelerate Speculative Decoding" [2024-02] [[paper](https://arxiv.org/abs/2402.02082)]
+
+- "Accelerated Speculative Sampling Based on Tree Monte Carlo" [2024-07] [[paper](https://proceedings.mlr.press/v235/hu24f.html)]
+
+### ICLR 2024
+
+- "DistillSpec: Improving Speculative Decoding via Knowledge Distillation" [2023-10] [[paper](https://arxiv.org/abs/2310.08461)]
+
+### NAACL 2024
+
+**Main**
+
+- "REST: Retrieval-Based Speculative Decoding" [2023-11] [[paper](https://arxiv.org/abs/2311.08252)]
+
+**Findings**
+
+- "SLiM: Speculative Decoding with Hypothesis Reduction" [2024-06] [[paper](https://aclanthology.org/2024.findings-naacl.63/)]
 
 ## History & Origin
 
