@@ -5,6 +5,7 @@ Reading list on speculative decoding.
 **Table of Contents**
 
 - [Bibliography by Venues](#bibliography-by-venues)
+  - [NeurIPS 2025](#neurips-2025)
   - [EMNLP 2025](#emnlp-2025)
   - [ACL 2025](#acl-2025)
   - [ICML 2025](#icml-2025)
@@ -31,6 +32,38 @@ Reading list on speculative decoding.
 - [Other Awesome Lists](#other-awesome-lists)
 
 ## Bibliography by Venues
+
+### NeurIPS 2025
+
+- "SuffixDecoding: Extreme Speculative Decoding for Emerging AI Applications" [2024-11] [[paper](https://arxiv.org/abs/2411.04975)]
+
+- "EasySpec: Layer-Parallel Speculative Decoding for Efficient Multi-GPU Utilization" [2025-02] [[paper](https://arxiv.org/abs/2502.02493)]
+
+- "GRIFFIN: Effective Token Alignment for Faster Speculative Decoding" [2025-02] [[paper](https://arxiv.org/abs/2502.11018)]
+
+- "Traversal Verification for Speculative Tree Decoding" [2025-05] [[paper](https://arxiv.org/abs/2505.12398)]
+
+- "STree: Speculative Tree Decoding for Hybrid State-Space Models" [2025-05] [[paper](https://arxiv.org/abs/2505.14969)]
+
+- "DREAM: Drafting with Refined Target Features and Entropy-Adaptive Cross-Attention Fusion for Multimodal Speculative Decoding" [2025-05] [[paper](https://arxiv.org/abs/2505.19201)]
+
+- "MoESD: Unveil Speculative Decoding's Potential for Accelerating Sparse MoE" [2025-05] [[paper](https://arxiv.org/abs/2505.19645)]
+
+- "List-Level Distribution Coupling with Applications to Speculative Decoding and Lossy Compression" [2025-06] [[paper](https://arxiv.org/abs/2506.05632)]
+
+- "Scaling Speculative Decoding with Lookahead Reasoning" [2025-06] [[paper](https://arxiv.org/abs/2506.19830)]
+
+- "OmniDraft: A Cross-vocabulary, Online Adaptive Drafter for On-device Speculative Decoding" [2025-07] [[paper](https://arxiv.org/abs/2507.02659)]
+
+- "ViSpec: Accelerating Vision-Language Models with Vision-Aware Speculative Decoding" [2025-09] [[paper](https://arxiv.org/abs/2509.15235)]
+
+- "Speculate Deep and Accurate: Lossless and Training-Free Acceleration for Offloaded LLMs via Substitute Speculative Decoding" [2025-09] [[paper](https://arxiv.org/abs/2509.18344)]
+
+- "AdaSPEC: Selective Knowledge Distillation for Efficient Speculative Decoders" [2025-10] [[paper](https://arxiv.org/abs/2510.19779)]
+
+- "CAS-Spec: Cascade Adaptive Self-Speculative Decoding for On-the-Fly Lossless Inference Acceleration of LLMs" [2025-10] [[paper](https://arxiv.org/abs/2510.26843)]
+
+- "Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding" [2025-12] [[paper](https://arxiv.org/abs/2512.23858)]
 
 ### EMNLP 2025
 
