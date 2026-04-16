@@ -529,6 +529,12 @@ Reading list on speculative decoding.
     <img src="imgs/2502.15197-1.png" width="300"></img>
     </p>
 
+- "MineDraft: A Framework for Batch Parallel Speculative Decoding" [2026-03] [[paper](https://arxiv.org/abs/2603.18016)] [[code](https://github.com/electron-shaders/MineDraft)]
+
+  > Overlaps drafting with verification by maintaining two batches: while one is being verified by the target model, the other is being drafted, hiding drafting latency behind verification compute. Up to +75% throughput and -39% end-to-end latency. Integrated into vLLM.
+  >
+  > Experiments on: Qwen3, Llama-3.3, EAGLE | ShareGPT, LMSYS Arena, Spec-Bench
+
 ## Draft Length Control
 
 - "Dynamic Speculation Lookahead Accelerates Speculative Decoding of Large Language Models" [2024-05] [[paper](https://arxiv.org/abs/2405.04304)]
