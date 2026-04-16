@@ -610,14 +610,27 @@ Reading list on speculative decoding.
 If you refer to this repo, please cite the following paper:
 
 ```
-@misc{zhang2024draftmodelknowsstop,
-      title={Draft Model Knows When to Stop: A Self-Verification Length Policy for Speculative Decoding},
-      author={Ziyin Zhang and Jiahao Xu and Tian Liang and Xingyu Chen and Zhiwei He and Rui Wang and Zhaopeng Tu},
-      year={2024},
-      eprint={2411.18462},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.18462},
+@inproceedings{Zhang2025SVIP,
+  author       = {Ziyin Zhang and
+                  Jiahao Xu and
+                  Tian Liang and
+                  Xingyu Chen and
+                  Zhiwei He and
+                  Rui Wang and
+                  Zhaopeng Tu},
+  editor       = {Christos Christodoulopoulos and
+                  Tanmoy Chakraborty and
+                  Carolyn Rose and
+                  Violet Peng},
+  title        = {Draft Model Knows When to Stop: Self-Verification Speculative Decoding
+                  for Long-Form Generation},
+  booktitle    = {Proceedings of the 2025 Conference on Empirical Methods in Natural
+                  Language Processing, {EMNLP} 2025, Suzhou, China, November 4-9, 2025},
+  pages        = {16685--16697},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2025},
+  url          = {https://doi.org/10.18653/v1/2025.emnlp-main.844},
+  doi          = {10.18653/V1/2025.EMNLP-MAIN.844}
 }
 ```
 
