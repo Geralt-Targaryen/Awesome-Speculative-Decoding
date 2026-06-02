@@ -5,6 +5,7 @@ Reading list on speculative decoding.
 **Table of Contents**
 
 - [Bibliography by Venues](#bibliography-by-venues)
+  - [ICLR 2026](#iclr-2026)
   - [NeurIPS 2025](#neurips-2025)
   - [EMNLP 2025](#emnlp-2025)
   - [ACL 2025](#acl-2025)
@@ -32,6 +33,38 @@ Reading list on speculative decoding.
 - [Other Awesome Lists](#other-awesome-lists)
 
 ## Bibliography by Venues
+
+### ICLR 2026
+
+- "SpecBranch: Speculative Decoding via Hybrid Drafting and Rollback-Aware Branch Parallelism" [2025-05] [[paper](https://arxiv.org/abs/2506.01979)]
+
+- "Scaling Up, Speeding Up: A Benchmark of Speculative Decoding for Efficient LLM Test-Time Scaling" [2025-08] [[paper](https://arxiv.org/abs/2509.04474)]
+
+- "FastGRPO: Accelerating Policy Optimization via Concurrency-aware Speculative Decoding and Online Draft Learning" [2025-09] [[paper](https://arxiv.org/abs/2509.21792)]
+
+- "Bridging Draft Policy Misalignment: Group Tree Optimization for Speculative Decoding" [2025-09] [[paper](https://arxiv.org/abs/2509.22134)]
+
+- "Speculative Actions: A Lossless Framework for Faster Agentic Systems" [2025-10] [[paper](https://arxiv.org/abs/2510.04371)]
+
+- "Not-a-Bandit: Provably No-Regret Drafter Selection in Speculative Decoding for LLMs" [2025-10] [[paper](https://arxiv.org/abs/2510.20064)]
+
+- "Global Resolution: Optimal Multi-Draft Speculative Sampling via Convex Minimization" [2025-11] [[paper](https://arxiv.org/abs/2511.15898)]
+
+- "Training-Free Loosely Speculative Decoding: Accepting Semantically Correct Drafts Beyond Exact Match" [2025-11] [[paper](https://arxiv.org/abs/2511.22972)]
+
+- "Overcoming Joint Intractability with Lossless Hierarchical Speculative Decoding" [2026-01] [[paper](https://arxiv.org/abs/2601.05724)]
+
+- "Flatter Tokens are More Valuable for Speculative Draft Model Training" [2026-01] [[paper](https://arxiv.org/abs/2601.18902)]
+
+- "Improving the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models" [2026-02] [[paper](https://arxiv.org/abs/2602.01428)]
+
+- "Learning to Draft: Adaptive Speculative Decoding with Reinforcement Learning" [2026-03] [[paper](https://arxiv.org/abs/2603.01639)]
+
+- "Speculative Speculative Decoding" [2026-03] [[paper](https://arxiv.org/abs/2603.03251)]
+
+- "Cactus: Accelerating Auto-Regressive Decoding with Constrained Acceptance Speculative Sampling" [2026-04] [[paper](https://arxiv.org/abs/2604.04987)]
+
+- "RepSpec: Structural Re-parameterized Draft Model Training for Speculative Decoding" [2026-04] [[paper](https://openreview.net/forum?id=bqEi97qzzzF)]
 
 ### NeurIPS 2025
 
