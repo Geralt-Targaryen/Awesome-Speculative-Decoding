@@ -562,6 +562,12 @@ Reading list on speculative decoding.
     <img src="imgs/2502.15197-1.png" width="300"></img>
     </p>
 
+- "DIVERSED: Relaxed Speculative Decoding via Dynamic Ensemble Verification" [2026-04] [AISTATS 2026] [[paper](https://arxiv.org/abs/2604.07622)] [[code](https://github.com/comeusr/diversed)]
+
+  > A learned context-dependent ensemble verifier ν(x) = w·p_target(x) + (1-w)·q_draft(x) blends target and draft distributions. The static ensemble traces the Pareto frontier between acceptance and fidelity (acceptance = 1 - w·TV(q,p)); dynamic per-token weighting pushes beyond it. One draft-target pair serves multiple latency-quality SLAs without retraining.
+  >
+  > Experiments on: Llama-3.1-8B / Llama-3.2-1B, Qwen3, Gemma-3 | summarization (CNN/DM), math (GSM8K), code (HumanEval)
+
 ## Draft Length Control
 
 - "Dynamic Speculation Lookahead Accelerates Speculative Decoding of Large Language Models" [2024-05] [[paper](https://arxiv.org/abs/2405.04304)]
